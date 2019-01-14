@@ -55,4 +55,4 @@ def retrieve_item(name):
 			return jsonify({'items': store['items']})
 	return jsonify({'message': 'store not found'})
 
-app.run(port=8080)
+app.run(host='0.0.0.0')
